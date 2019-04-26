@@ -11,6 +11,11 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def bumbum(ctx):
     await ctx.send("*coming from behind*")
+    
+@bot.command(pass_context=True)
+async def bloodhunt(ctx):
+    await ctx.send("YOU HAVE SUCCESSFULLY BEEN KILLED")
+    await bot.logout()
 
 
 bot.run("T0K3N")
