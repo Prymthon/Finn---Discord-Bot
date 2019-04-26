@@ -7,3 +7,10 @@ bot = commands.Bot(command_prefix='-')
 @bot.event
 async def on_ready():
     print ("IT COULD ATTACK AT ANY MOMENT")
+    
+@bot.command(pass_context=True)
+async def bumbum(ctx):
+    await ctx.send("*coming from behind*")
+
+
+bot.run("T0K3N")
